@@ -7,8 +7,11 @@ Application used for Zemoga's test case.
     2- Maven
     3- Intellij (Recommended), Eclipse or any other IDE
     4- Lombok
+    5- Docker (Optional)
 
-<h2>Running the application:</h2>
+<h2>Running the application</h2>
+
+<h3>Using IDE</h3>
 
     1- Clone the repository locally.
     2- Open the repository as project in any IDE.
@@ -16,6 +19,12 @@ Application used for Zemoga's test case.
     4- Make sure you have lombok and annotation processing enabled.
     5- Change the connection and configuration in application.yml.
     6- Run DemoApplication.java
+
+<h3>Using Docker-Compose</h3>
+
+    1- Clone the repository locally.
+    2- Change the connection and configuration in application.yml.
+    6- Run "docker-compose up"
 
 <h2>Technologies Used</h2>
 
