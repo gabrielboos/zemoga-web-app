@@ -1,0 +1,10 @@
+version: "3"
+services:
+    zemoga:
+        container_name: zemoga-web-app
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        ports:
+            - "127.0.0.1:8080:8080"
+        restart: always
