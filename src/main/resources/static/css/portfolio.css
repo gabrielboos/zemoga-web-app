@@ -1,0 +1,13 @@
+
+.main-container {
+  text-align: center;
+  width: 1080px;
+  background-color: rgb(88, 146, 148);
+  display: flex;
+}
+
+.main-container h1 {
+  text-align: center;
+  padding-top: 500px;
+}
+

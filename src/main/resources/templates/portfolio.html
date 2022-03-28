@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="user-logo">
+            <img th:src="${user.imagePath}" th:alt="${user.imagePath}" width="250px" height="250px" />
+        </div>
+
+        <h1><span th:text="${user.name}"></h1>
+
+        <div class="user-resume">
+            <h2>My Work Experience</h2>
+            <span th:text="${user.experience}" />
+        </div>
+
+        <div>
+            <h2><span th:text="${user.name}" />'s Timeline</h2>
+            <br>
+            <table class="table table-striped table-primary">
+                <thead class="ttop">
+                    <tr class="table-info">
+                        <td width="20px"><b> IMAGE</b></td>
+                        <td><b>NAME</b></td>
+                        <td><b>TEXT</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="tweet, iStat : ${tweets}">
+                        <td>
+                            <img th:src="${tweet.profileImageUrl}" th:alt="${tweet.profileImageUrl}" width="20px" />
+                        </td>
+
+                        <td th:text="${tweet.fromUser}"></td>
+
+                        <td th:text="${tweet.text}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -2,7 +2,7 @@ spring:
   application:
     name: zemoga-web-app
   datasource:
-    url: jdbc:mysql://*
+    url: jdbc:mysql://localhost:3306/db
     username: *
     password: *
     driverClassName: com.mysql.jdbc.Driver
@@ -13,6 +13,11 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+  thymeleaf: # Thymeleaf
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+    prefix: file:src/main/resources/templates/
 
 twitter:
   zemoga:
@@ -20,6 +25,9 @@ twitter:
     consumer-secret: *
     access-tokens: *
     access-token-secret: *
+
+portfolio:
+  account-id: 14
 
 logging:
   file:
