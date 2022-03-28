@@ -5,7 +5,6 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Null;
 import java.io.Serializable;
 
 @AllArgsConstructor
@@ -14,8 +13,12 @@ public class PortfolioUserDTO implements Serializable {
 
     private long id;
 
+    @NotNull
+    @NotEmpty
     private String experience;
 
+    @NotNull
+    @NotEmpty
     private String imagePath;
 
     @NotNull
@@ -30,16 +33,25 @@ public class PortfolioUserDTO implements Serializable {
     @NotEmpty
     private String email;
 
+    @NotNull
+    @NotEmpty
     private String address;
 
+    @NotNull
+    @NotEmpty
     private String phone;
 
+    @NotNull
+    @NotEmpty
     private String zipCode;
 
+    @NotNull
+    @NotEmpty
     private String adress;
 
+    @NotNull
+    @NotEmpty
     private String twiter_user;
-
 
     public long getId() {
         return id;

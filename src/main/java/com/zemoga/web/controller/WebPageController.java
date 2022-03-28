@@ -1,6 +1,5 @@
 package com.zemoga.web.controller;
 
-import com.zemoga.web.repository.dto.PortfolioUserDTO;
 import com.zemoga.web.service.PortfolioService;
 import com.zemoga.web.service.TwitterService;
 import org.springframework.beans.factory.annotation.Autowired;
